@@ -1,0 +1,216 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 200px;
+  height: auto;
+}
+
+.dots {
+  position: relative;
+  min-height: 200px;
+}
+
+.dot {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.dot-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  animation: dot-1 10s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+@keyframes dot-1 {
+  0% {
+    width: 60px;
+    background-color: red;
+  }
+  12.5% {
+    width: 200px;
+  }
+  25% {
+    width: 60px;
+    background-color: yellow;
+  }
+  37.5% {
+    width: 200px;
+  }
+  50% {
+    width: 60px;
+    background-color: skyblue;
+  }
+  62.5% {
+    width: 200px;
+  }
+  75% {
+    width: 60px;
+    background-color: green;
+  }
+  87.5% {
+    width: 200px;
+  }
+  100% {
+    width: 60px;
+    background-color: red;
+  }
+}
+
+.dot-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: yellow;
+  animation: dot-2 10s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+@keyframes dot-2 {
+  0% {
+    height: 60px;
+    background-color: yellow;
+  }
+  12.5% {
+    height: 200px;
+  }
+  25% {
+    height: 60px;
+    background-color: skyblue;
+  }
+  37.5% {
+    height: 200px;
+  }
+  50% {
+    height: 60px;
+    background-color: green;
+  }
+  62.5% {
+    height: 200px;
+  }
+  75% {
+    height: 60px;
+    background-color: red;
+  }
+  87.5% {
+    height: 200px;
+  }
+  100% {
+    height: 60px;
+    background-color: yellow;
+  }
+}
+
+.dot-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: skyblue;
+  animation: dot-3 10s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+@keyframes dot-3 {
+  0% {
+    width: 60px;
+    background-color: skyblue;
+  }
+  12.5% {
+    width: 200px;
+  }
+  25% {
+    width: 60px;
+    background-color: green;
+  }
+  37.5% {
+    width: 200px;
+  }
+  50% {
+    width: 60px;
+    background-color: red;
+  }
+  62.5% {
+    width: 200px;
+  }
+  75% {
+    width: 60px;
+    background-color: yellow;
+  }
+  87.5% {
+    width: 200px;
+  }
+  100% {
+    width: 60px;
+    background-color: skyblue;
+  }
+}
+
+.dot-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  animation: dot-4 10s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+@keyframes dot-4 {
+  0% {
+    height: 60px;
+    background-color: green;
+  }
+  12.5% {
+    height: 200px;
+  }
+  25% {
+    height: 60px;
+    background-color: red;
+  }
+  37.5% {
+    height: 200px;
+  }
+  50% {
+    height: 60px;
+    background-color: yellow;
+  }
+  62.5% {
+    height: 200px;
+  }
+  75% {
+    height: 60px;
+    background-color: skyblue;
+  }
+  87.5% {
+    height: 200px;
+  }
+  100% {
+    height: 60px;
+    background-color: green;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.buttons button {
+  background: darkslategrey;
+  color: white;
+  font-weight: 500;
+  padding: 5px 15px;
+  cursor: pointer;
+}
